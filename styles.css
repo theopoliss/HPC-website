@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.background-image {
+    position: relative;
+}
+
+.background-image img {
+    width: 100%;
+}
+
+#kipchoge {
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+}
+
+#HPC-logo {
+    position: fixed;
+    left: 0px;
+    z-index: 1;
+}
+
+.home-text {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.home-text h1 {
+    color: white;
+    font-size: 50px;
+}
+
+@media (max-width: 1400px) and (min-width: 1000px) {
+    .background-image img {
+        width: 1400px;
+    }
+}
