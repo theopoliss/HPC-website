@@ -36,8 +36,8 @@ body {
     position: fixed;
     left: 0px;
     z-index: 1;
-    animation: dropIn 3s ease-in-out;
-    animation-delay: 2s;
+    animation: dropIn 2.5s ease-in-out;
+    animation-delay: 1.4s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
