@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HPC | Higher Pursuits Club</title>
+        <meta charset = "utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    </head>
+    
+    <body>
+        <div class = "home">
+            <div class="container">
+                <div class="background-image">
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="images/kipchoge_no_logo_mobile.jpg">
+                        <img id="background" src="images/HPC_Kipchoge_no_logo.jpg" alt="Kipchoge">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="images/kipchoge_cropped_mobile.png">
+                        <img id="kipchoge" src="images/kipchoge_cropped.png" alt="Kipchoge">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="images/HPC_transparent_logo_mobile.png">
+                        <img id="HPC-logo" src="images/HPC_transparent_logo.png" alt="HPC Logo">
+                    </picture>
+                    <div class="home-text">
+                        <div class = "pursue-text">
+                            <h1 id="pursue">Pursue Higher</h1>
+                        <div class="join-button">
+                            <a id="join" href="join.html" class="button">Join The Club.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="more">
+                <a href="about.html" class="button">Learn More</a>
+            </div>> -->
+        </div>
+       
+
+        <script>
+            window.addEventListener('scroll', function() {
+                var scrollPosition = window.pageYOffset;
+                var textElements = document.querySelectorAll('.home-text, .pursue-text, #join');
+
+                textElements.forEach(function(textElement) {
+                    textElement.style.top = (20 + scrollPosition * 0.05) + '%';
+                });
+            });
+        </script>
+    </body>
+</html>
