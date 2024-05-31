@@ -1,3 +1,3 @@
 # HPC-website
 
-Test
+The official HPC website. Currently under construction.
