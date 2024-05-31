@@ -11,6 +11,7 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
 }
 
 .background-image {
@@ -74,9 +75,15 @@ body {
 }
 
 .join-button:hover {
-    cursor: pointer;
-    border-bottom: 3px solid white;
-    transition: border-bottom 0.3s ease-in-out;
+    .line {
+        border-bottom: 3px solid white;
+        transition: border-bottom 0.3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.line {
+    width: 405px;
 }
 
 
@@ -100,9 +107,40 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 1400px) and (min-width: 1000px) {
+/* @media (max-width: 1400px) and (min-width: 1000px) {
     .background-image img {
         width: 1400px;
+    }
+    #HPC-logo {
+        left: -100px;
+    }
+} */
+/* 
+@media (max-width: 1200px) and (minwidth: 1000px) {
+
+} */
+
+@media (max-width: 1000px) {
+    .pursue-text h1 {
+        font-size: 40px;
+    }
+    #join {
+        font-size: 45px;
+    }
+    .line {
+        width: 272px;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1000px) {
+    .pursue-text h1 {
+        font-size: 45px;
+    }
+    #join {
+        font-size: 50px;
+    }
+    .line {
+        width: 301px;
     }
 }
 
