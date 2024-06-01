@@ -4,14 +4,10 @@ body {
     background-color: black;
 }
 
-.home {
-    display: flex;
-    flex-direction: column;
-}
-
 .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .background-image {
@@ -171,6 +167,9 @@ body {
     .line {
         width: 272px;
     }
+    .socials {
+        left: 7%;
+    }
 }
 
 @media (max-width: 1400px) and (min-width: 1000px) {
@@ -182,6 +181,9 @@ body {
     }
     .line {
         width: 301px;
+    }
+    .socials {
+        top: 83%
     }
 }
 
