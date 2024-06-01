@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.background-image {
+    position: relative;
+}
+
+.background-image img {
+    width: 100%;
+}
+
+#kipchoge {
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+}
+
+@keyframes dropIn {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+#HPC-logo {
+    position: fixed;
+    left: 0px;
+    z-index: 1;
+    animation: dropIn 2.5s ease-in-out;
+    animation-delay: 1.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+.home-text {    
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    z-index: 3;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#join {
+    font-family: 'PT Serif', serif;
+    font-weight: 1;
+    font-size: 67px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.join-button {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+
+.join-button:hover {
+    .line {
+        border-bottom: 3px solid white;
+        transition: border-bottom 0.3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.line {
+    width: 405px;
+}
+
+
+.pursue-text h1 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 63px;
+    font-weight: 1;
+    margin-bottom: 10px;
+}
+
+.home-text h1 {
+    color: white;
+}
+
+.more {
+    display: block;
+}
+
+.more a {
+    color: white;
+    text-decoration: none;
+}
+
+.socials {
+    position: absolute;
+    top: 86%;
+    left: 1%;
+    z-index: 3;
+}
+
+.socials svg {
+    width: 24px;
+}
+
+/* MOVING TEXT TEST*/
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.marquee p {
+    color: white;
+    padding-left: 50%;
+    animation: marquee 25s linear infinite;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(42%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* @media (max-width: 1400px) and (min-width: 1000px) {
+    .background-image img {
+        width: 1400px;
+    }
+    #HPC-logo {
+        left: -100px;
+    }
+} */
+/* 
+@media (max-width: 1200px) and (minwidth: 1000px) {
+
+} */
+
+@media (max-width: 1000px) {
+    .pursue-text h1 {
+        font-size: 40px;
+    }
+    #join {
+        font-size: 45px;
+    }
+    .line {
+        width: 272px;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1000px) {
+    .pursue-text h1 {
+        font-size: 45px;
+    }
+    #join {
+        font-size: 50px;
+    }
+    .line {
+        width: 301px;
+    }
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 20px;
+}
