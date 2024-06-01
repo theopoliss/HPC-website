@@ -107,6 +107,47 @@ body {
     text-decoration: none;
 }
 
+.socials {
+    position: absolute;
+    top: 86%;
+    left: 1%;
+    z-index: 3;
+}
+
+.socials svg {
+    width: 24px;
+}
+
+/* MOVING TEXT TEST*/
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.marquee p {
+    color: white;
+    padding-left: 50%;
+    animation: marquee 25s linear infinite;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(42%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 /* @media (max-width: 1400px) and (min-width: 1000px) {
     .background-image img {
         width: 1400px;
@@ -147,5 +188,5 @@ body {
 body::after {
     content: "";
     display: block;
-    height: 50px;
+    height: 20px;
 }
