@@ -87,7 +87,8 @@ body {
 }
 
 .pursue-text h1 {
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    /* font-family: 'Neue Haas Grotesk Display Pro', sans-serif; */
+    font-family: 'Neue Haas Custom', sans-serif;
     font-size: 63px;
     font-weight: 1;
     margin-bottom: 10px;
@@ -185,6 +186,11 @@ body {
     .line {
         width: 301px;
     }
+}
+
+@font-face {
+    font-family: 'Neue Haas Custom';
+    src: url('fonts/NeueHaasDisplayXXThin.ttf') format('truetype');
 }
 
 body::after {
