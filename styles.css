@@ -70,12 +70,10 @@ body {
     margin-left: -100px;
 }
 
-.join-button:hover {
-    .line {
-        border-bottom: 3px solid white;
-        transition: border-bottom 0.3s ease-in-out;
-        cursor: pointer;
-    }
+.join-button:hover .line {
+    border-bottom: 3px solid white;
+    transition: border-bottom 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .line {
@@ -105,8 +103,17 @@ body {
     z-index: 3;
 }
 
+.socials a {
+    text-decoration: none;
+}
+
 .socials svg {
     margin-right: 8px;
+}
+
+a img {
+    border: none;
+    text-decoration: none;
 }
 
 /* MOVING TEXT TEST*/
@@ -160,7 +167,7 @@ body {
         font-size: 55px;
     }
     .line {
-        width: 272px;
+        width: 330px;
     }
     .socials {
         left: 3%
@@ -184,7 +191,7 @@ body {
         font-size: 55px;
     }
     .line {
-        width: 301px;
+        width: 330px;
     }
 }
 
