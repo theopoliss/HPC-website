@@ -104,7 +104,7 @@ body {
 }
 
 .socials {
-    position: absolute;
+    position: fixed;
     top: 2%;
     left: 1%;
     z-index: 3;
