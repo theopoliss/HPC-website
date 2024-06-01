@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HPC | Higher Pursuits Club</title>
+        <meta charset = "utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    </head>
+    
+    <body>
+        <div class = "home">
+            <div class="container">
+                <div class="background-image">
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="images/kipchoge_no_logo_mobile.jpg">
+                        <img id="background" src="images/HPC_Kipchoge_no_logo.jpg" alt="Kipchoge">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="images/kipchoge_cropped_mobile.png">
+                        <img id="kipchoge" src="images/kipchoge_cropped.png" alt="Kipchoge">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="images/HPC_transparent_logo_mobile.png">
+                        <img id="HPC-logo" src="images/HPC_transparent_logo.png" alt="HPC Logo">
+                    </picture>
+                    <div class="home-text">
+                        <div class = "pursue-text">
+                            <h1 id="pursue">Pursue Higher</h1>
+                        <div class="join-button">
+                            <a id="join" href="join.html" class="button">Join The Club.</a>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="socials">
+                    <a id="instagram" href="https://www.instagram.com/higherpursuitsclub?igsh=MTNldHd2YWl1OXh2bQ%3D%3D&utm_source=qr">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </a>
+                    <a id="strava" href="https://www.strava.com/clubs/1178695?share_sig=F8B021411717219138&_branch_match_id=1082396899182044429&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy4pSixL1EssKNDLyczL1s%2F1Ni4INgyxMPZKAgBSbHvkIwAAAA%3D%3D">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-strava" viewBox="0 0 16 16">
+                            <path d="M6.731 0 2 9.125h2.788L6.73 5.497l1.93 3.628h2.766zm4.694 9.125-1.372 2.756L8.66 9.125H6.547L10.053 16l3.484-6.875z"/>
+                        </svg>
+                    </a>
+                </nav>
+                <!--TEST FOR MOVING TEXT-->
+                <div class="marquee">
+                    <p>OCTOBER 12, 2019… ELIUD KIPCHOGE CROSSES THE FINISH LINE OF THE INEOS 1:59 CHALLENGE 
+                        IN VIENNA, BECOMING THE FIRST PERSON IN HISTORY TO RUN A MARATHON IN UNDER 2 HOURS.</p>
+                </div>
+                <!--TEST-->
+            </div>
+        </div>
+       
+
+        <script>
+            window.addEventListener('scroll', function() {
+                if (window.innerWidth < 1000) { // Adjust this value as needed
+                    return;
+                }
+                var scrollPosition = window.pageYOffset;
+                var textElements = document.querySelectorAll('.home-text, .pursue-text, #join');
+
+                textElements.forEach(function(textElement) {
+                    textElement.style.top = (20 + scrollPosition * 0.05) + '%';
+                });
+            });
+        </script>
+    </body>
+</html>
