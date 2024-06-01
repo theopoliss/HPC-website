@@ -82,6 +82,9 @@ body {
     width: 405px;
 }
 
+.pursue-text {
+    width: 100%
+}
 
 .pursue-text h1 {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
@@ -92,15 +95,6 @@ body {
 
 .home-text h1 {
     color: white;
-}
-
-.more {
-    display: block;
-}
-
-.more a {
-    color: white;
-    text-decoration: none;
 }
 
 .socials {
@@ -159,7 +153,7 @@ body {
 
 @media (max-width: 1000px) {
     .pursue-text h1 {
-        font-size: 47px;
+        font-size: 50px;
     }
     #join {
         font-size: 55px;
@@ -174,6 +168,10 @@ body {
         width: 60px;
         height: 60px;
         margin-right: 14px;
+    }
+    .pursue-text {
+        margin-left: -100px;
+        width: 500px;
     }
 }
 
