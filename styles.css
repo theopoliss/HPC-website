@@ -38,6 +38,10 @@ body {
     animation-fill-mode: forwards;
 }
 
+#HPC-logo:hover {
+    opacity: 0.5;
+}
+
 
 .home-text {    
     position: absolute;
@@ -71,19 +75,19 @@ body {
 }
 
 .join-button:hover .line {
-    border-bottom: 3px solid white;
     /* transition: border-bottom 0.3s ease-in-out; */
-    animation: leftright 0.3s;
+    animation: leftright 0.3s forwards;
     cursor: pointer;
 }
 
-.join-button:not(:hover) .line {
-    border-bottom: 3px solid white;
-    animation: rightleft 0.3s forwards;
-}
+/* .join-button:not(:hover) .line {
+    animation: rightleft 0.3s;
+} */
 
 .line {
-    width: 405px;
+    width: 0px;
+    border-bottom: 3px solid white;
+    animation: rightleft 0.3s;
 }
 
 @keyframes leftright {
