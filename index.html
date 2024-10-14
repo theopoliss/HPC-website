@@ -54,18 +54,32 @@
                         </svg>
                     </a>
                 </nav>
-                <!--TEST FOR MOVING TEXT-->
+                <!--Moving Text-->
                 <div class="marquee">
                     <p>OCTOBER 12, 2019: ELIUD KIPCHOGE CROSSES THE FINISH LINE OF THE INEOS 1:59 CHALLENGE 
                         IN VIENNA WITH A TIME OF 1:59:40.2, BECOMING THE FIRST PERSON IN HISTORY 
                         TO RUN A MARATHON IN UNDER 2 HOURS.</p>
                 </div>
-                <!--TEST-->
+                
+            </div>
+                
+            <!-- Modal -->
+            <div id="signupModal" class="modal">
+                <div class="modal-content">
+                    <form id="signupForm">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="text" id="password" placeholder="Email" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
             </div>
 
-       
-
         <script>
+            window.addEventListener('load', function() {
+                document.querySelector('.join-button').classList.add('initialized');
+            });
+
+            // Scroll effect for text elements
             window.addEventListener('scroll', function() {
                 if (window.innerWidth < 1000) { // Adjust this value as needed
                     return;
@@ -77,6 +91,59 @@
                     textElement.style.top = (20 + scrollPosition * 0.04) + '%';
                 });
             });
+
+            // Modal functionality
+            var modal = document.getElementById('signupModal');
+            var joinButton = document.getElementById('join');
+            var closeButton = document.getElementById('closeModal');
+
+            joinButton.onclick = function(e) {
+                e.preventDefault();
+                showModal();
+                // Hide "Pursue Higher" and "Join The Club" text
+                document.querySelector('.pursue-text').style.display = 'none';
+                document.getElementById('join').style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    hideModal();
+                    document.querySelector('.pursue-text').style.display = 'block';
+                    document.getElementById('join').style.display = 'block';
+                }
+            }
+
+            // Form submission (you can add your own logic here)
+            document.getElementById('signupForm').onsubmit = function(e) {
+                e.preventDefault();
+                var name = document.getElementById('name').value;
+                var password = document.getElementById('password').value;
+                console.log('Sign up attempt with name:', name);
+                // Add your sign-up logic here
+                alert('Sign up successful!'); // Replace with your own logic
+                hideModal();
+                // Clear the input fields
+                document.getElementById('name').value = '';
+                document.getElementById('password').value = '';
+                document.querySelector('.pursue-text').style.display = 'block';
+                document.getElementById('join').style.display = 'block';
+            }
+            
+            function showModal() {
+                const modal = document.querySelector('.modal');
+                modal.style.display = 'block';
+                setTimeout(() => {
+                    modal.classList.add('show');
+                }, 10);
+            }
+
+            function hideModal() {
+                const modal = document.querySelector('.modal');
+                modal.classList.remove('show');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 300);
+            }
         </script>
     </body>
 </html>
